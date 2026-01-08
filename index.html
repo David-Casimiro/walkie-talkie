@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>WalkTalk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="login">
+  <h2>WalkTalk</h2>
+  <input id="username" placeholder="Seu nome" />
+  <select id="room">
+    <option value="sala1">Sala 1</option>
+    <option value="sala2">Sala 2</option>
+  </select>
+  <button onclick="entrar()">Entrar</button>
+</div>
+
+<div id="app" class="hidden">
+  <h2 id="roomName"></h2>
+  <h3>Usuários na sala:</h3>
+  <ul id="users"></ul>
+
+  <button id="talkBtn">🎤 Aperte para falar</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
